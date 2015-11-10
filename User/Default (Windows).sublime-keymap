@@ -1,0 +1,222 @@
+ [ // css格式化
+     {
+         "keys": ["ctrl+alt+c"],
+         "command": "css_format",
+         "args": {
+             "action": "compact-bs-ns"
+         }
+     },
+     //html 格式化 html_tidy
+     {
+         "keys": ["ctrl+alt+h"],
+         "command": "html_tidy"
+     },
+     //js个格式化
+     {
+         "keys": ["ctrl+alt+j"],
+         "command": "js_format",
+         "context": [{
+             "key": "selector",
+             "operator": "equal",
+             "operand": "source.js,source.json"
+         }]
+     },
+     //光标移动一个词
+     {
+         "keys": ["ctrl+b"],
+         "command": "move",
+         "args": {
+             "by": "subwords",
+             "forward": false
+         }
+     },
+     //
+     {
+         "keys": ["ctrl+f"],
+         "command": "move",
+         "args": {
+             "by": "subword_ends",
+             "forward": true
+         }
+     },
+     //移动一个词并选中
+     {
+         "keys": ["ctrl+shift+b"],
+         "command": "move",
+         "args": {
+             "by": "subwords",
+             "forward": false,
+             "extend": true
+         }
+     },
+     //
+     {
+         "keys": ["ctrl+shift+f"],
+         "command": "move",
+         "args": {
+             "by": "subword_ends",
+             "forward": true,
+             "extend": true
+         }
+     },
+     //括号之间的选择 光标条到标签开始地方
+     {
+         "keys": ["ctrl+e", "ctrl+b"],
+         "command": "bh_key",
+         "args": {
+             "no_outside_adj": true,
+             "lines": true,
+             "plugin": {
+                 "type": ["__all__"],
+                 "command": "bh_modules.bracketselect",
+                 "args": {
+                     "select": "left"
+                 }
+             }
+         }
+     },
+     // Go to right bracket
+     {
+         "keys": ["ctrl+e", "ctrl+f"],
+         "command": "bh_key",
+         "args": {
+             "no_outside_adj": true,
+             "lines": true,
+             "plugin": {
+                 "type": ["__all__"],
+                 "command": "bh_modules.bracketselect",
+                 "args": {
+                     "select": "right"
+                 }
+             }
+         }
+     },
+     //删除操作括号之间的操作
+     // {
+     //     "keys": ["ctrl+e", "ctrl+r"],
+     //     "command": "bh_remove_brackets"
+     // },
+     // 选择两个标签之间的内容 不包括标签
+     {
+         "no_outside_adj": true,
+         "keys": ["ctrl+e", "ctrl+s"],
+         "command": "bh_key",
+         "args": {
+             "lines": true,
+             "plugin": {
+                 "type": ["__all__"],
+                 "command": "bh_modules.bracketselect"
+             }
+         }
+     },
+     // Select text including brackets
+     {
+         "keys": ["ctrl+e", "ctrl+d"],
+         "command": "bh_key",
+         "args": {
+             "no_outside_adj": true,
+             "lines": true,
+             "plugin": {
+                 "type": ["__all__"],
+                 "command": "bh_modules.bracketselect",
+                 "args": {
+                     "always_include_brackets": true
+                 }
+             }
+         }
+     }, {
+         "keys": ["super+shift+f"],
+         "command": "show_panel",
+         "args": {
+             "panel": "find"
+         }
+     }, {
+         "keys": ["super+shift+h"],
+         "command": "show_panel",
+         "args": {
+             "panel": "replace"
+         }
+     }, {
+         "keys": ["f1"],
+         "command": "side_bar_open_in_browser",
+         "args": {
+             "paths": [],
+             "type": "testing",
+             "browser": "Chrome"
+         }
+     }, {
+         "keys": ["f2"],
+         "command": "side_bar_open_in_browser",
+         "args": {
+             "paths": [],
+             "type": "testing",
+             "browser": "FireFox"
+         }
+     }, {
+         "keys": ["f3"],
+         "command": "side_bar_open_in_browser",
+         "args": {
+             "paths": [],
+             "type": "testing",
+             "browser": "IE"
+         }
+     },
+     // //chrome
+     // {
+     //     "keys": ["f1"],
+     //     "command": "side_bar_files_open_with",
+     //     "args": {
+     //         "paths": [],
+     //         "application": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+     //         "extensions": ".*" //匹配任何文件类型
+     //     }
+     // },
+     {
+         "keys": ["ctrl+alt+v"],
+         "command": "paste_and_indent"
+     } //粘贴并且缩进
+     , {
+         "keys": ["tab"],
+         "command": "expand_abbreviation_by_tab",
+
+         // put comma-separated syntax selectors for which
+         // you want to expandEmmet abbreviations into "operand" key
+         // instead of SCOPE_SELECTOR.
+         // Examples: source.js, text.html - source
+         "context": [{
+                 "operand": "SCOPE_SELECTOR",
+                 "operator": "equal",
+                 "match_all": true,
+                 "key": "selector"
+             },
+
+             // run only if there's no selected text
+             {
+                 "match_all": true,
+                 "key": "selection_empty"
+             },
+
+             // don't work if there are active tabstops
+             {
+                 "operator": "equal",
+                 "operand": false,
+                 "match_all": true,
+                 "key": "has_next_field"
+             },
+
+             // don't work if completion popup is visible and you
+             // want to insert completion with Tab. If you want to
+             // expand Emmet with Tab even if popup is visible --
+             // remove this section
+             {
+                 "operand": false,
+                 "operator": "equal",
+                 "match_all": true,
+                 "key": "auto_complete_visible"
+             }, {
+                 "match_all": true,
+                 "key": "is_abbreviation"
+             }
+         ]
+     }
+ ]
