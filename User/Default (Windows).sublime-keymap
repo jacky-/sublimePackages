@@ -218,5 +218,16 @@
                  "key": "is_abbreviation"
              }
          ]
-     }
+     },
+      {
+        "keys": [
+            "shift+ctrl+1"
+        ],
+        "command": "rename_tag",
+        "context": [
+            {
+                "key": "emmet_action_enabled.rename_tag"
+            }
+        ]
+    }
  ]
