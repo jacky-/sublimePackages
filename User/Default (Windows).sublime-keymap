@@ -125,18 +125,6 @@
              }
          }
      }, {
-         "keys": ["super+shift+f"],
-         "command": "show_panel",
-         "args": {
-             "panel": "find"
-         }
-     }, {
-         "keys": ["super+shift+h"],
-         "command": "show_panel",
-         "args": {
-             "panel": "replace"
-         }
-     }, {
          "keys": ["f1"],
          "command": "side_bar_open_in_browser",
          "args": {

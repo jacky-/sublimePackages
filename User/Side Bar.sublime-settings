@@ -1,3 +1,5 @@
 {
-  "default_browser": "chrome",
+  "default_browser": "",
+  "open_all_browsers": ["firefox", "chrome", "ie"],
+  "disabled_menuitem_open_in_new_window": true
 }

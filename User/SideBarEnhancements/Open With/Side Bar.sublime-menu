@@ -11,7 +11,7 @@
 				"command": "side_bar_files_open_with",
 				"args": {
 									"paths": [],
-									"application": "Adobe Photoshop CS5.app", // OSX
+									"application": "C:\\Program Files\\Adobe\\Adobe Photoshop CC (64 Bit)\\Photoshop.exe", // OSX
 									"extensions":"psd|png|jpg|jpeg",  //any file with these extensions
 									"args":[]
 								},
