@@ -209,7 +209,7 @@
      },
       {
         "keys": [
-            "shift+ctrl+1"
+            "shift+ctrl+`"
         ],
         "command": "rename_tag",
         "context": [
