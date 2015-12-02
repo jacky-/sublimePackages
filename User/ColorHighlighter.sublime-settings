@@ -1,6 +1,6 @@
 {
-    "style": "filled",
-    "ha_style": "underlined_squiggly",
+    "style": "text",
+    "ha_style": "text",
     "icons": true
     // "ha_icons": true
 }
