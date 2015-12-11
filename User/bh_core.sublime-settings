@@ -1,4 +1,11 @@
 {
+    "show_in_minimap": true,
+    "align_content_highlight_bar": true,
+    "content_highlight_bar":true,
+    "high_visibility_enabled_by_default": false,
+    "high_visibility_style": "stippled",
+    // "high_visibility_color": "__bracket__",
+     "match_only_adjacent": false,
     "bracket_styles": {
         // "default" and "unmatched" styles are special
         // styles. If they are not defined here,
@@ -15,7 +22,7 @@
             // BH1's original default color for reference
             "color": "entity.name.class",
             // "color": "brackethighlighter.default",
-            "style": "underline"
+            "style": "outline"
         },
 
         // This particular style is used to highlight
@@ -28,48 +35,48 @@
         },
         // User defined region styles
         "curly": {
-            "icon": "curly_bracket"
+            "icon": "curly_bracket",
             // "color": "brackethighlighter.curly"
             // "style": "underline"
         },
         "round": {
-            "icon": "round_bracket"
+            "icon": "round_bracket",
             // "color": "brackethighlighter.round"
             // "style": "underline"
         },
         "square": {
-            "icon": "square_bracket"
+            "icon": "square_bracket",
             // "color": "brackethighlighter.square"
             // "style": "underline"
         },
         "angle": {
-            "icon": "angle_bracket"
+            "icon": "angle_bracket",
             // "color": "brackethighlighter.angle",
             // "style": "underline"
         },
         "tag": {
             "icon": "tag",
             // "endpoints": true,
-            // "color": "brackethighlighter.tag",
+            // "color": "brackethighlighter,.tag",
             "style": "outline"
         },
         "c_define": {
-            "icon": "hash"
+            "icon": "hash",
             // "color": "brackethighlighter.c_define",
             // "style": "underline"
         },
         "single_quote": {
-            "icon": "single_quote"
+            "icon": "single_quote",
             // "color": "brackethighlighter.quote",
             // "style": "underline"
         },
         "double_quote": {
-            "icon": "double_quote"
+            "icon": "double_quote",
             // "color": "brackethighlighter.quote",
             // "style": "underline"
         },
         "regex": {
-            "icon": "regex"
+            "icon": "regex",
             // "color": "brackethighlighter.quote",
             // "style": "underline"
         }

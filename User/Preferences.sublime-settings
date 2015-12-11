@@ -1,7 +1,7 @@
 {
 	"auto_complete_commit_on_tab": false,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/predawn/itg.Monokai.tmTheme",
+	"color_scheme": "Packages/User/Color Highlighter/themes/itg.Monokai.tmTheme",
 	"create_window_at_startup": false,
 	"default_line_ending": "unix",
 	"draw_minimap_border": true,
