@@ -9,7 +9,9 @@
 		"Color Highlighter",
 		"Emmet",
 		"FileHeader",
+		"GitGutter",
 		"Package Control",
-		"SFTP"
+		"SFTP",
+		"Theme - Soda"
 	]
 }
