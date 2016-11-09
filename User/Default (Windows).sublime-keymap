@@ -3,7 +3,7 @@
          "keys": ["ctrl+alt+c"],
          "command": "css_format",
          "args": {
-             "action": "compact-bs-ns"
+             "action": "expand"
          }
      },
      //html 格式化 html_tidy

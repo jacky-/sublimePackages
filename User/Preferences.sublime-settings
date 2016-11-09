@@ -1,30 +1,41 @@
 {
 	"auto_complete_commit_on_tab": false,
 	"bold_folder_labels": true,
+	"caret_style": "solid",
 	"color_scheme": "Packages/User/Color Highlighter/themes/itg.Monokai.tmTheme",
 	"create_window_at_startup": false,
-	"caret_style": "solid",
-	"wide_caret": true,
 	"default_line_ending": "unix",
 	"draw_minimap_border": true,
 	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
+	"file_exclude_patterns":
+	[
+		".DS_Store",
+		"*.pid",
+		"*.pyc"
+	],
 	"findreplace_small": true,
+	"folder_exclude_patterns":
+	[
+		".git",
+		"__pycache__",
+		"env",
+		"env3"
+	],
 	"font_face": "MONACO",
-	"tab_size": 4,
-	"tab_completion": false,
 	"font_options":
 	[
 		"no_italic",
 		"no_bold",
 		"subpixel_antialias"
 	],
-	"font_size": 10,
+	"font_size": 9,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Package Control",
 		"Vintage"
 	],
 	"indent_to_bracket": true,
@@ -48,24 +59,20 @@
 	[
 		80
 	],
-	  "file_exclude_patterns":
-    [
-        ".DS_Store",
-        "*.pid",
-        "*.pyc"
-    ],
-    "folder_exclude_patterns":
-    [
-        ".git",
-        "__pycache__",
-        "env",
-        "env3"
-    ],
 	"scroll_past_end": true,
-	"theme": "predawn-DEV.sublime-theme",
+	"show_encoding": true,
+	"tab_completion": false,
+	"tab_size": 4,
+	// "theme": "predawn-DEV.sublime-theme",
+	"theme": "ayu-mirage.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"ui_big_tabs": true,
+	"ui_fix_tab_labels": true,
+	"ui_separator": true,
 	"tree_animation_enabled": false,
 	"trim_trailing_white_space_on_save": true,
 	"update_check": false,
+	"wide_caret": true,
 	"word_wrap": true,
 	"wrap_width": 80
 }

@@ -1,4 +1,5 @@
 {
+    "enabled": false,
     "style": "text",
     "ha_style": "text",
     "icons": true

@@ -6,13 +6,15 @@
 	],
 	"installed_packages":
 	[
+		"AutoFileName",
 		"Color Highlighter",
-		"AngularJS",
 		"Emmet",
+		"EncodingHelper",
 		"FileHeader",
 		"GitGutter",
 		"Package Control",
 		"SFTP",
-		"Theme - Soda"
+		"Theme - Soda",
+		"TrailingSpaces"
 	]
 }
