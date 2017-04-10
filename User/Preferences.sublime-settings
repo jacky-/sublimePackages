@@ -35,10 +35,10 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Package Control",
 		"Vintage"
 	],
 	"indent_to_bracket": true,
+	"jsoncomma_on_save": true,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"open_files_in_new_window": false,
@@ -59,6 +59,10 @@
 	[
 		80
 	],
+    "use_entire_file_if_no_selection" : true, // 默认不选中时对整个文件做操作
+    "indent" : 4, // 默认缩进2个空格，可自定义为缩进4个空格或一个制表符\t
+    "sort_keys" : false, // 默认为对key做自然排序，有习惯的同学可以改成格式化时自然排序
+    "ensure_ascii" : false, // 默认关闭，开启时将对所有非ASCII编码的字符做unicode编码
 	"scroll_past_end": true,
 	"show_encoding": true,
 	"tab_completion": false,

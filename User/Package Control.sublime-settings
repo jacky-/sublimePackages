@@ -11,9 +11,17 @@
 		"Emmet",
 		"EncodingHelper",
 		"FileHeader",
+		"Git",
 		"GitGutter",
+		"Jade",
+		"JSONComma",
+		"Markdown Preview",
 		"Package Control",
+		"Pretty JSON",
+		"Pug",
 		"SFTP",
+		"Sublime-KnockoutJS-Snippets",
+		"Terminal",
 		"Theme - Soda",
 		"TrailingSpaces"
 	]
