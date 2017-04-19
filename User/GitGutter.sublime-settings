@@ -1,5 +1,5 @@
 {
-	"git_binary": "C:\\Program Files\\Git\\bin\\git.exe",
+  "git_binary": "/usr/bin/git",
   "compare_against": "HEAD",
-	"live_mode": false
+  "live_mode": false
 }
